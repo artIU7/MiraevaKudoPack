@@ -1,0 +1,128 @@
+.sidebar {
+  width: 250px;
+  background-color: #ffffff;
+  color: rgb(51, 48, 48);
+  height: 100vh;
+  position: fixed;
+  border-right: 3px solid;
+  border-image: linear-gradient(to bottom, #ffb9b4,  #74c7ff) 1;
+  padding: 0 10px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif; 
+  font-size: 15px; 
+  font-weight: bold;
+}
+
+.sidebar-header {
+  padding: 20px;
+  text-align: center;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0 10px;
+  margin: 0;
+}
+
+.sidebar-menu li {
+  margin: 8px 0;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  font-family: inherit; 
+  font-size: 14px; 
+  font-weight: bold;
+}
+
+.sidebar-menu li:not(.active)::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 10px;
+  background-color: hsla(0, 100%, 50%, 0.750);
+  transition: all 0.3s ease;
+}
+
+.sidebar-menu li.active::before {
+  width: 0;
+}
+
+.sidebar-menu li a {
+  color: rgb(42, 42, 42);
+  text-decoration: none;
+  display: block;
+  padding: 12px 15px;
+  border-radius: 5px;
+  font-family: inherit; 
+}
+
+.sidebar-menu li:nth-child(1) {
+  background-color: #A5D0ED;
+}
+.sidebar-menu li:nth-child(1):hover {
+  background-color: #8fbcd9;
+}
+
+.sidebar-menu li:nth-child(2) {
+  background-color: #A1D0C4;
+}
+.sidebar-menu li:nth-child(2):hover {
+  background-color: #8dbbaf;
+}
+
+.sidebar-menu li:nth-child(3) {
+  background-color: #BFC6CA;
+}
+.sidebar-menu li:nth-child(3):hover {
+  background-color: #a9b0b4;
+}
+
+.sidebar-menu li:nth-child(4) {
+  background-color: #C4A8C3;
+}
+.sidebar-menu li:nth-child(4):hover {
+  background-color: #b095af;
+}
+
+.sidebar-menu li:nth-child(5) {
+  background-color: #B5CE8F;
+}
+.sidebar-menu li:nth-child(5):hover {
+  background-color: #a1ba7d;
+}
+
+.sidebar-menu li.active {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logout-container {
+  padding: 0 10px;
+  margin-bottom: 10px;
+}
+
+.logout-button {
+  width: 100%;
+  padding: 12px 15px;
+  background-color: #ff4444;
+  color: rgb(42, 42, 42);;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 10px;
+  font-family: inherit; 
+  font-size: 1em; 
+  font-weight: bold;
+}
+
+.logout-button:hover {
+  background-color: #cc0000;
+}
+
+.kudo-logo {
+  width: 150px;
+  margin-bottom: 30px;
+}
